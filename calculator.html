@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EMI Calculator | WERT Bank</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h2>● WERT Bank</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="calculator.html">EMI Calculator</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="container">
+    <h1>EMI Calculator</h1>
+
+    <div class="card">
+        <label>Loan Amount (₹)</label>
+        <input type="number" id="amount" placeholder="500000">
+
+        <label>Interest Rate (%)</label>
+        <input type="number" id="rate" placeholder="8.5">
+
+        <label>Duration (Years)</label>
+        <input type="number" id="years" placeholder="5">
+
+        <button class="btn" onclick="calculateEMI()">Calculate</button>
+
+        <h3 id="result">Your EMI will appear here.</h3>
+    </div>
+</section>
+
+<footer>© 2026 WERT Bank</footer>
+
+</body>
+</html>
